@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { AgentBuilder } from "@/components/AgentBuilder";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <header className="border-b bg-white p-4 sticky top-0 z-10 shadow-sm">
+        <div className="container mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-8 rounded-md bg-primary/90 text-white grid place-items-center font-bold">
+              AB
+            </div>
+            <h1 className="text-xl font-bold">AI Agent Builder</h1>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+        <AgentBuilder />
+      </main>
     </div>
   );
 };
